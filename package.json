@@ -1,20 +1,21 @@
 {
   "name": "assign-mentor",
   "version": "1.0.0",
-  "engines": {
-    "node": "13.1.0"
-  },
-  "description": "",
-  "main": "index.js",
+  "description": "Builder",
+  "main": "index.j",
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix student-mentor-front && npm run build --prefix student-mentor-front"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aswinee",
+  "author": "Anand Kumar",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
-    "express": "^4.17.3",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
     "lodash": "^4.17.21",
     "nodemon": "^2.0.15"
   }
